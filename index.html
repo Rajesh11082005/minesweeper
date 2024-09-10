@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <title>MineSweapper</title>
+</head>
+<body>
+    <div class="game">
+        <h2>MineSweeper</h2>
+        <div class="score-box">
+            <h3>Score</h3>
+            <h4 id="score1">0</h4>
+        </div>
+        <div class="mine-wrapper" id="mine-wrapper">
+            
+        </div>
+        <div class="stats-wrapper" id="stats">
+            <h1 id="fin-msg">hi</h1>
+            <h1>Score</h1>
+            <h1 id="score">0</h1>
+            <button onclick="reset();" id="reset">Restart</button>
+            <button onclick="nextLevel();" id="nextLevel">Next Level</button>
+        </div>
+
+        <div class="level">
+            <h3>Level <span id="level">1</span></h3>
+        </div>
+        <audio src="./assets/bomb.wav" preload="auto" id="audio1"></audio>
+        <audio src="./assets/pop.mp3" preload="auto" id="audio2"></audio>
+        <audio src="./assets/lost.wav" preload="auto" id="audio3"></audio>
+        <audio src="./assets/won.wav" preload="auto"id="audio4"></audio>
+
+    </div>  
+</body>
+<script src="./script/script.js"></script>
+</html>
